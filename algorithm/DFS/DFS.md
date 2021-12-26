@@ -67,8 +67,6 @@ sys.setrecursionlimit(99999)
 
 
 def dfs(v):
-
-
     visited[v] = 1
     course.append(v)
     for w in range(N+1):
@@ -87,7 +85,6 @@ for i in range(M):
     start, end = map(int,input().split())
     arr[start][end] = 1
     arr[end][start] = 1
-
 
 print(*dfs(V))
 
